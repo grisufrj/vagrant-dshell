@@ -27,5 +27,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vbox.customize ["modifyvm", :id, "--memory", 1024]
   end
 
-  config.vm.provision :shell, :path => "init.sh"
+  config.vm.provision :shell, :path => "dshell.sh"
 end
